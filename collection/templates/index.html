@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
 {% block title %}
-Homepage - {{ block.super }}
+{{ block.super }}
 {% endblock title %}
 
 {% block content %}
-<h1> Hi There!</h1>
-<p> I am a real plain website.</p>
+
+<h1 style="text-align:center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">HELLO
+    THERE!
+</h1>
+<p style="text-align:center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Welcome
+    to the next Amazon.com.</p>
+<ul>
+    {% for book in books %}
+    <li>{{ book }}</li>
+    <li>{{ book.book_name }}</li>
+    <li>{{ book.author }}</li>
+    <li>{{ book.description }}</li>
+    {% endfor %}
+</ul>
+
 {% endblock content %}

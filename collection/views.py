@@ -1,5 +1,15 @@
+import csv, io
 from django.shortcuts import render
+from collection.models import Book
+# double check path!!
 
 
 def index(request):
-    return render(request, 'index.html')
+    books = Book.objects.all()
+    return render(request, 'index.html', {
+        'books': books,
+    })
+
+def book_upload(request):
+    template = "base.html"
+

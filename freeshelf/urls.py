@@ -20,12 +20,14 @@ from collection import views
 
 
 urlpatterns = [
-    
+
     path('', views.index, name='home'),
   
     path('about/', TemplateView.as_view(template_name='about.html'), name='about'),
 
     path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
+
+    path('register/', TemplateView.as_view(template_name='register.html'), name='register'),
 
     path('admin/', admin.site.urls),
 ]
