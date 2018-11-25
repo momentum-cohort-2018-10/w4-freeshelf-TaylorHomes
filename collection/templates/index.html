@@ -13,13 +13,16 @@
 <ul>
     {% for book in books %}
     <li>{{ book }}</li>
-    <li>{{ book.book_name }}</li>
+    <h2><a href="{% url 'book_detail' slug=book.slug %}"></a>
+        <li>{{ book.book_name }}</li>
+        </a>
+    </h2>
     <li>{{ book.author }}</li>
     <li>{{ book.description }}</li>
     <li>{{ book.pub_date }}</li>
     <li>{{ book.categories }}</li>
     <li>{{ book.slug }}</li>
-    <li>{{ book.image }}</li>
+    <li>{{ book.picture.url }}</li>
     {% endfor %}
 </ul>
 

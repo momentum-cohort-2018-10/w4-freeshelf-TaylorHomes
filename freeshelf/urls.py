@@ -30,7 +30,13 @@ urlpatterns = [
 
     path('register/', TemplateView.as_view(template_name='register.html'), name='register'),
 
+    path('books/<slug>/', views.book_detail, name='book_detail'),
+
     path('admin/', admin.site.urls),
+
 
 ]
 
+# if settings.DEBUG:
+#    urlpatterns += static(
+#        settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

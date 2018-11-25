@@ -1,6 +1,6 @@
 book_name,author,description,pub_date,python,css,html,javascript,slug,image 
-Explore Flask, Robert Picard, A book about best practices and patterns for developing web applications with Flask., 2013, 1, 0, 0, 0, flask, flask.jpg
+Explore Flask, Robert Picard, A book about best practices and patterns for developing web applications with Flask., 2013, 1, 0, 0, 0,ffflask,flask.jpg
 Building Skills in Object-Oriented Design, Steven Litty, The coffee-shop reason for reading this book is to provide the beginning designer with a sequence of interesting
-and moderately complex exercises in OO design., 2019, 1, 0, 0, 1, dummy, pythondummy.jpg
-HTML Dog Tutorials, Johnny Pupperocini, A book that teaches web developement to dogs., 2011, 0, 1, 1, 1, dogs, htmldogs.jpg
+and moderately complex exercises in OO design.,2019, 1, 0, 0, 1,pydummy,pythondummy.jpg
+HTML Dog Tutorials, Johnny Pupperocini, A book that teaches web developement to dogs., 2011, 0, 1, 1, 1,webdogs,htmldogs.jpg
 

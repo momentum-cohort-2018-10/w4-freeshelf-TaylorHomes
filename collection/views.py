@@ -12,7 +12,7 @@ def index(request):
 
 def book_detail(request, slug):
     book = Book.objects.get(slug=slug)
-    return render(request, 'templates/index_html', {
+    return render(request, 'books/book_detail.html', {
         'book': book,
     })
 
